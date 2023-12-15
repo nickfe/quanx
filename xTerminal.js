@@ -6,8 +6,8 @@
 
 let body = $response.body
 let obj = JSON.parse(body)
-obj.data = {
-  ...obj.data,
+obj = {
+  ...obj,
   memberEnd: "2099-12-31T23:59:59.999Z",
 }
 body = JSON.stringify(obj)
