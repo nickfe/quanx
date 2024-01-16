@@ -1,8 +1,10 @@
 /**
- * uPaste
- * ^https://api.7littlemen.com/paste/native_config.json url script-response-body https://raw.githubusercontent.com/nickfe/quanx/main/uPaste.js
- * hostname=7littlemen.com
- */
+* uPaste
+[rewrite_local]
+^https://api.7littlemen.com/paste/native_config.json url script-response-body https://raw.githubusercontent.com/nickfe/quanx/main/uPaste.js
+[mitm]
+hostname=7littlemen.com
+*/
 
 let body = $response.body
 let obj = JSON.parse(body)
