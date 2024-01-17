@@ -9,7 +9,8 @@ hostname=api.7littlemen.com
 const url = $request.url
 let body = $response.body
 if (url.includes('native_config.json')) {
-  let obj = JSON.parse(body)
+  // let obj = JSON.parse(body)
+  let obj = body // 原返回值不是标准的JSON，带了尾逗号
   obj = {
     ...obj,
     "rating_trigger_count":20,
