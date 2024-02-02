@@ -5,7 +5,7 @@ circle
 **************************************
 
 [rewrite_local]
-^http://circlereader.com/api/user/current url script-response-body https://raw.githubusercontent.com/nickfe/quanx/main/circle.js
+^https?://circlereader.com/api/user/current url script-response-body https://raw.githubusercontent.com/nickfe/quanx/main/circle.js
 
 [mitm]
 hostname = circlereader.com
