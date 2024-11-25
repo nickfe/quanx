@@ -5,7 +5,7 @@
   hostname=i.weread.qq.com
  */
 
-var body = $response.body;
+var body = JSON.parse($response.body);
 
 body = {
   ...body,
