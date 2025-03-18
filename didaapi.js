@@ -6,7 +6,7 @@ api\.dida365\.com\/api\/v2\/user\/status url script-response-body https://raw.gi
 
 [mitm] 
 
-hostname = dida365.com
+hostname = api.dida365.com
 
 *******************************/
 
