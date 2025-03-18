@@ -2,7 +2,7 @@
 
 [rewrite_local]
 
-^https:\/\/(api\.)?dida365\.com\/api\/v2\/user\/status url script-response-body https://raw.githubusercontent.com/nickfe/quanx/main/dida.js
+dida365\.com\/api\/v2\/user\/status url script-response-body https://raw.githubusercontent.com/nickfe/quanx/main/dida.js
 
 [mitm] 
 
