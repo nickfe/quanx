@@ -13,6 +13,7 @@ hostname = dida365.com
 var responseBody = $response.body;
 var jsonObject = JSON.parse(responseBody);
 jsonObject.prodDate = "1999-01-01T00:00:00.000Z";
+jsonObject.proEndDate = "2034-08-28T13:13:16.000+0000";
 jsonObject.needSubscribe = false;
 jsonObject.pro = true;
 responseBody = JSON.stringify(jsonObject);
